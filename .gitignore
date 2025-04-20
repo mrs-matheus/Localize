@@ -1,37 +1,136 @@
-*.swp
-*.*~
-project.lock.json
-.DS_Store
-*.pyc
-nupkg/
-
-# Visual Studio Code
-.vscode
-
-# Rider
-.idea
-
-# User-specific files
-*.suo
+##############################
+# Build e artefatos temporários
+##############################
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.app
+*.log
+*.vspscc
 *.user
-*.userosscache
+*.suo
+*.cache
+*.pdb
+*.mdb
+*.dbmdl
+*.tmp
+*.bak
+
+##############################
+# Visual Studio e Rider
+##############################
+.vs/
+.idea/
+.vscode/
+*.userprefs
 *.sln.docstates
 
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-build/
-bld/
-[Bb]in/
-[Oo]bj/
-[Oo]ut/
-msbuild.log
-msbuild.err
-msbuild.wrn
+##############################
+# Configurações locais
+##############################
+*.user
+*.userosscache
+*.suo
+*.sdf
+*.ipch
+*.dbmdl
+*.psess
+*.vsp
+*.vspx
+*.vsix
+*.ncb
+*.sbr
+*.scc
 
-# Visual Studio 2015
-.vs/
+##############################
+# Arquivos de publicação
+##############################
+publish/
+App_Data/
+appsettings.*.json
+appsettings.Development.json
+
+##############################
+# Arquivos gerados por ferramentas
+##############################
+Generated_Code/
+TestResults/
+TestOutput/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.psess
+*.vsp
+
+##############################
+# Logs e dumps
+##############################
+*.log
+*.tlog
+*.svclog
+*.dmp
+
+##############################
+# Pacotes
+##############################
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+project.lock.json
+project.fragment.lock.json
+
+##############################
+# Configuração do NuGet
+##############################
+.nuget/
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+
+##############################
+# Dotnet CLI
+##############################
+project.assets.json
+project.nuget.cache
+artifacts/
+
+##############################
+# Configurações do ReSharper
+##############################
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+##############################
+# Arquivos do Postman (opcional)
+##############################
+# Remova se quiser versionar a collection
+# *.postman_collection.json
+# *.postman_environment.json
+
+##############################
+# Sistema operacional
+##############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+##############################
+# Configuração global
+##############################
+global.json
+
+##############################
+# Secrets (atenção!)
+##############################
+secrets.json
+
+# Se usar Azure Functions ou outro serviço com host local:
+local.settings.json
