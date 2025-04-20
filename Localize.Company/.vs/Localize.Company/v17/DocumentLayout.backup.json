@@ -1,0 +1,239 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\_dev\\Localize\\Localize.Company\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{141924E6-B63A-4409-BD9E-7F45F948AF1D}|Localize.Company.Application\\Localize.Company.Application.csproj|c:\\_dev\\localize\\localize.company\\localize.company.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141924E6-B63A-4409-BD9E-7F45F948AF1D}|Localize.Company.Application\\Localize.Company.Application.csproj|solutionrelative:localize.company.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22A9121-CFAE-4077-909F-C83B39D2CE28}|Localize.Company.Api\\Localize.Company.Api.csproj|c:\\_dev\\localize\\localize.company\\localize.company.api\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D22A9121-CFAE-4077-909F-C83B39D2CE28}|Localize.Company.Api\\Localize.Company.Api.csproj|solutionrelative:localize.company.api\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{141924E6-B63A-4409-BD9E-7F45F948AF1D}|Localize.Company.Application\\Localize.Company.Application.csproj|c:\\_dev\\localize\\localize.company\\localize.company.application\\contracts\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141924E6-B63A-4409-BD9E-7F45F948AF1D}|Localize.Company.Application\\Localize.Company.Application.csproj|solutionrelative:localize.company.application\\contracts\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{141924E6-B63A-4409-BD9E-7F45F948AF1D}|Localize.Company.Application\\Localize.Company.Application.csproj|c:\\_dev\\localize\\localize.company\\localize.company.application\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141924E6-B63A-4409-BD9E-7F45F948AF1D}|Localize.Company.Application\\Localize.Company.Application.csproj|solutionrelative:localize.company.application\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{141924E6-B63A-4409-BD9E-7F45F948AF1D}|Localize.Company.Application\\Localize.Company.Application.csproj|c:\\_dev\\localize\\localize.company\\localize.company.application\\dtos\\organizationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{141924E6-B63A-4409-BD9E-7F45F948AF1D}|Localize.Company.Application\\Localize.Company.Application.csproj|solutionrelative:localize.company.application\\dtos\\organizationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|c:\\_dev\\localize\\localize.company\\localize.company.domain\\services\\organizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|solutionrelative:localize.company.domain\\services\\organizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|c:\\_dev\\localize\\localize.company\\localize.company.domain\\contracts\\repositories\\iorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|solutionrelative:localize.company.domain\\contracts\\repositories\\iorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|c:\\_dev\\localize\\localize.company\\localize.company.domain\\contracts\\services\\iorganizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|solutionrelative:localize.company.domain\\contracts\\services\\iorganizationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA724A5-B428-4F62-8301-7E44DEEB296E}|Localize.Company.Infrastructure\\Localize.Company.Infrastructure.csproj|c:\\_dev\\localize\\localize.company\\localize.company.infrastructure\\repositories\\organizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA724A5-B428-4F62-8301-7E44DEEB296E}|Localize.Company.Infrastructure\\Localize.Company.Infrastructure.csproj|solutionrelative:localize.company.infrastructure\\repositories\\organizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA724A5-B428-4F62-8301-7E44DEEB296E}|Localize.Company.Infrastructure\\Localize.Company.Infrastructure.csproj|c:\\_dev\\localize\\localize.company\\localize.company.infrastructure\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA724A5-B428-4F62-8301-7E44DEEB296E}|Localize.Company.Infrastructure\\Localize.Company.Infrastructure.csproj|solutionrelative:localize.company.infrastructure\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|c:\\_dev\\localize\\localize.company\\localize.company.domain\\services\\servicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|solutionrelative:localize.company.domain\\services\\servicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|c:\\_dev\\localize\\localize.company\\localize.company.domain\\entities\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F03BE7ED-855E-4FF5-9874-DC243B421C68}|Localize.Company.Domain\\Localize.Company.Domain.csproj|solutionrelative:localize.company.domain\\entities\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA724A5-B428-4F62-8301-7E44DEEB296E}|Localize.Company.Infrastructure\\Localize.Company.Infrastructure.csproj|c:\\_dev\\localize\\localize.company\\localize.company.infrastructure\\contexts\\localizecompanycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA724A5-B428-4F62-8301-7E44DEEB296E}|Localize.Company.Infrastructure\\Localize.Company.Infrastructure.csproj|solutionrelative:localize.company.infrastructure\\contexts\\localizecompanycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Application\\DTOs\\UserDto.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Application\\DTOs\\UserDto.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Application\\DTOs\\UserDto.cs",
+              "RelativeToolTip": "Localize.Company.Application\\DTOs\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:13:20.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrganizationDto.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Application\\DTOs\\OrganizationDto.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Application\\DTOs\\OrganizationDto.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Application\\DTOs\\OrganizationDto.cs",
+              "RelativeToolTip": "Localize.Company.Application\\DTOs\\OrganizationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:12:55.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IOrganizationRepository.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Contracts\\Repositories\\IOrganizationRepository.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Domain\\Contracts\\Repositories\\IOrganizationRepository.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Contracts\\Repositories\\IOrganizationRepository.cs",
+              "RelativeToolTip": "Localize.Company.Domain\\Contracts\\Repositories\\IOrganizationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:09:11.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrganizationRepository.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Infrastructure\\Repositories\\OrganizationRepository.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Infrastructure\\Repositories\\OrganizationRepository.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Infrastructure\\Repositories\\OrganizationRepository.cs",
+              "RelativeToolTip": "Localize.Company.Infrastructure\\Repositories\\OrganizationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T03:08:27.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IOrganizationService.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Contracts\\Services\\IOrganizationService.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Domain\\Contracts\\Services\\IOrganizationService.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Contracts\\Services\\IOrganizationService.cs",
+              "RelativeToolTip": "Localize.Company.Domain\\Contracts\\Services\\IOrganizationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T02:52:08.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrganizationService.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Services\\OrganizationService.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Domain\\Services\\OrganizationService.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Services\\OrganizationService.cs",
+              "RelativeToolTip": "Localize.Company.Domain\\Services\\OrganizationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T02:48:57.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LocalizeCompanyContext.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Infrastructure\\Contexts\\LocalizeCompanyContext.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Infrastructure\\Contexts\\LocalizeCompanyContext.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Infrastructure\\Contexts\\LocalizeCompanyContext.cs",
+              "RelativeToolTip": "Localize.Company.Infrastructure\\Contexts\\LocalizeCompanyContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T02:41:57.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Organization.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Entities\\Organization.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Domain\\Entities\\Organization.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Entities\\Organization.cs",
+              "RelativeToolTip": "Localize.Company.Domain\\Entities\\Organization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T02:41:18.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICompanyService.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Application\\Contracts\\ICompanyService.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Application\\Contracts\\ICompanyService.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Application\\Contracts\\ICompanyService.cs",
+              "RelativeToolTip": "Localize.Company.Application\\Contracts\\ICompanyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T02:12:32.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Api\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Api\\Controllers\\CompanyController.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Api\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "Localize.Company.Api\\Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvx0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T02:09:54.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Infrastructure\\Repositories\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Infrastructure\\Repositories\\RepositoryBase.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Infrastructure\\Repositories\\RepositoryBase.cs",
+              "RelativeToolTip": "Localize.Company.Infrastructure\\Repositories\\RepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T01:57:11.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceBase.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Services\\ServiceBase.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Domain\\Services\\ServiceBase.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Domain\\Services\\ServiceBase.cs",
+              "RelativeToolTip": "Localize.Company.Domain\\Services\\ServiceBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T01:57:11.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Application\\Services\\CompanyService.cs",
+              "RelativeDocumentMoniker": "Localize.Company.Application\\Services\\CompanyService.cs",
+              "ToolTip": "C:\\_dev\\Localize\\Localize.Company\\Localize.Company.Application\\Services\\CompanyService.cs",
+              "RelativeToolTip": "Localize.Company.Application\\Services\\CompanyService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T23:48:13.308Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

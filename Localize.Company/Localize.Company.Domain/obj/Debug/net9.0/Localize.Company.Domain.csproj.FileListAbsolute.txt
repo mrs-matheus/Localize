@@ -1,0 +1,14 @@
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\bin\Debug\net9.0\Localize.Company.Domain.deps.json
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\bin\Debug\net9.0\Localize.Company.Domain.runtimeconfig.json
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\bin\Debug\net9.0\Localize.Company.Domain.dll
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\bin\Debug\net9.0\Localize.Company.Domain.pdb
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\Localize.Company.Domain.csproj.AssemblyReference.cache
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\Localize.Company.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\Localize.Company.Domain.AssemblyInfoInputs.cache
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\Localize.Company.Domain.AssemblyInfo.cs
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\Localize.Company.Domain.csproj.CoreCompileInputs.cache
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\Localize.Company.Domain.dll
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\refint\Localize.Company.Domain.dll
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\Localize.Company.Domain.pdb
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\Localize.Company.Domain.genruntimeconfig.cache
+C:\_dev\Localize\Localize.Company\Localize.Company.Domain\obj\Debug\net9.0\ref\Localize.Company.Domain.dll
