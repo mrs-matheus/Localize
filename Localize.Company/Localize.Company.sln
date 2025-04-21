@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localize.Company.Api", "Localize.Company.Api\Localize.Company.Api.csproj", "{D22A9121-CFAE-4077-909F-C83B39D2CE28}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localize.Company.Infrastructure", "Localize.Company.Infrastructure\Localize.Company.Infrastructure.csproj", "{7CA724A5-B428-4F62-8301-7E44DEEB296E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localize.Company.Application", "Localize.Company.Application\Localize.Company.Application.csproj", "{141924E6-B63A-4409-BD9E-7F45F948AF1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localize.Company.Tests", "Localize.Company.Tests\Localize.Company.Tests.csproj", "{4F30B685-E699-4506-AF4B-EAEFAA3E1267}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{141924E6-B63A-4409-BD9E-7F45F948AF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{141924E6-B63A-4409-BD9E-7F45F948AF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{141924E6-B63A-4409-BD9E-7F45F948AF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F30B685-E699-4506-AF4B-EAEFAA3E1267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F30B685-E699-4506-AF4B-EAEFAA3E1267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F30B685-E699-4506-AF4B-EAEFAA3E1267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F30B685-E699-4506-AF4B-EAEFAA3E1267}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
