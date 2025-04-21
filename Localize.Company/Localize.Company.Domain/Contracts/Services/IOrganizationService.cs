@@ -1,4 +1,5 @@
-﻿using Localize.Company.Domain.Entities;
+﻿using Localize.Company.Application.Utils;
+using Localize.Company.Domain.Entities;
 
 namespace Localize.Company.Domain.Contracts.Services
 {
@@ -6,6 +7,6 @@ namespace Localize.Company.Domain.Contracts.Services
     {
         Task<Organization> GetByCnpj(string cnpj);
         Task AddByLoggedUser(Organization organization);
-        Task<IEnumerable<Organization>> GetAllLoggedUser(int userId);
+        Task<PagedResult<Organization>> GetAllLoggedUser(int userId, int page, int pageSize);
     }
 }

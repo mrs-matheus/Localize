@@ -6,6 +6,6 @@ namespace Localize.Company.Application.Contracts
     public interface ICompanyService
     {
         Task<ResponseBase<object>> AddCompany(string cnpj);
-        Task<ResponseBase<OrganizationDto>> GetAllByLoggedUser();
+        Task<ResponseBase<OrganizationDto>> GetAllByLoggedUser(int page, int pageSize);
     }
 }

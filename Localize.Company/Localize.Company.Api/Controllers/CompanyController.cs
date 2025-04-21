@@ -1,4 +1,5 @@
-﻿using Localize.Company.Api.Validations;
+﻿using Localize.Company.Api.Requests;
+using Localize.Company.Api.Validations;
 using Localize.Company.Application.Contracts;
 using Localize.Company.Controllers;
 using Microsoft.AspNetCore.Authorization;
@@ -30,9 +31,9 @@ namespace Localize.Company.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllByLoggedUser()
+        public async Task<IActionResult> GetAllByLoggedUser([FromQuery] PagedRequest request)
         {
-            var result = await _companyService.GetAllByLoggedUser();
+            var result = await _companyService.GetAllByLoggedUser(request.Page, request.PageSize);
             return Ok(result);
         }
     }

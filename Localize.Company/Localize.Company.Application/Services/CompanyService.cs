@@ -54,11 +54,11 @@ namespace Localize.Company.Application.Services
             return ResponseBase<object>.Ok();
         }
 
-        public async Task<ResponseBase<OrganizationDto>> GetAllByLoggedUser()
+        public async Task<ResponseBase<OrganizationDto>> GetAllByLoggedUser(int page, int pageSize)
         {
             var user = await _userService.GetByToken();
 
-            var organizations = await _organizationService.GetAllLoggedUser(user.Id);
+            var organizations = await _organizationService.GetAllLoggedUser(user.Id, page, pageSize);
 
             return ResponseBase<OrganizationDto>.Ok(new OrganizationDto
             {
