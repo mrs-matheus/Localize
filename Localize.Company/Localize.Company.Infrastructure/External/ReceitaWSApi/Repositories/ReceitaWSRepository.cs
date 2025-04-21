@@ -1,4 +1,5 @@
-﻿using Localize.Company.Infrastructure.External.ReceitaWSApi.Contracts;
+﻿using Localize.Company.Domain.Notifications;
+using Localize.Company.Infrastructure.External.ReceitaWSApi.Contracts;
 using Localize.Company.Infrastructure.External.ReceitaWSApi.Entities;
 using System.Text.Json;
 
@@ -6,12 +7,13 @@ namespace Localize.Company.Infrastructure.External.ReceitaWSApi.Repositories
 {
     public class ReceitaWSRepository : IReceitaWSRepository
     {
-
-        public ReceitaWSRepository()
+        private readonly NotificationContext _notification;
+        public ReceitaWSRepository(NotificationContext notification)
         {
+            _notification = notification;
         }
 
-        public async Task<ReceitaWS> GetCompanyByCnpj(string cnpj)
+        public async Task<ReceitaWS?> GetCompanyByCnpj(string cnpj)
         {
             try
             {
@@ -19,9 +21,22 @@ namespace Localize.Company.Infrastructure.External.ReceitaWSApi.Repositories
 
                 var response = await new HttpClient().GetAsync(url);
 
-                response.EnsureSuccessStatusCode();
-
                 var json = await response.Content.ReadAsStringAsync();
+
+                var error = response.StatusCode.ToString();
+                if (response.IsSuccessStatusCode == false && error == "TooManyRequests")
+                {
+                    _notification.AddNotification("ReceitaWS", "Error, To Many Requests");
+                    return null;
+                }
+                using var doc = JsonDocument.Parse(json);
+                var root = doc.RootElement;
+
+                if (root.TryGetProperty("status", out var status) && status.GetString() == "ERROR")
+                {
+                    _notification.AddNotification("ReceitaWS", "ERROR, not in cache");
+                    return null;
+                }
 
                 var options = new JsonSerializerOptions
                 {
@@ -34,11 +49,9 @@ namespace Localize.Company.Infrastructure.External.ReceitaWSApi.Repositories
             }
             catch (Exception ex)
             {
-
-                throw;
+                _notification.AddNotification("ReceitaWS", "ERROR, not in cache");
+                return null;
             }
-
-            return new ReceitaWS();
         }
     }
 }

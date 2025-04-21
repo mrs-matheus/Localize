@@ -1,10 +1,11 @@
 ﻿using Localize.Company.Application.DTOs;
+using Localize.Company.Application.Responses;
 
 namespace Localize.Company.Application.Contracts
 {
     public interface IAccountService
     {
-        Task<string> Create(SignUpDto account);
-        Task<string> Authenticate(SignInDto account);
+        Task<ResponseBase<TokenDto>> Create(SignUpDto account);
+        Task<ResponseBase<TokenDto>> Authenticate(SignInDto account);
     }
 }

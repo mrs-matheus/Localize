@@ -3,6 +3,7 @@ namespace Localize.Company.Domain.Entities
 {
     public class Organization : EntityBase
     {
+
         public string NomeEmpresarial { get; set; }
         public string NomeFantasia { get; set; }
         public string Cnpj { get; set; }
@@ -17,5 +18,14 @@ namespace Localize.Company.Domain.Entities
         //Config One to Many
         public int UserId { get; set; }
 
+
+        public void SetCnpj(string cnpj)
+        {
+            Cnpj = CleanCnpj(cnpj);
+        }
+        private static string CleanCnpj(string cnpj)
+        {
+            return new string(cnpj.Where(char.IsDigit).ToArray());
+        }
     }
 }
