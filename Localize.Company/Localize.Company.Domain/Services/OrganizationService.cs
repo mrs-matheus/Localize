@@ -1,4 +1,5 @@
-﻿using Localize.Company.Domain.Contracts.Repositories;
+﻿using Localize.Company.Application.Utils;
+using Localize.Company.Domain.Contracts.Repositories;
 using Localize.Company.Domain.Contracts.Services;
 using Localize.Company.Domain.Entities;
 using Localize.Company.Domain.Notifications;
@@ -30,9 +31,9 @@ namespace Localize.Company.Domain.Services
             await _repository.Add(organization);
         }
 
-        public async Task<IEnumerable<Organization>> GetAllLoggedUser(int userId)
+        public async Task<PagedResult<Organization>> GetAllLoggedUser(int userId, int page, int pageSize)
         {
-            return await _repository.GetAllLoggedUser(userId);
+            return await _repository.GetAllLoggedUser(userId, page, pageSize);
         }
     }
 }
