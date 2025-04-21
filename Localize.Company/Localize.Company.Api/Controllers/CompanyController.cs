@@ -22,9 +22,14 @@ namespace Localize.Company.Api.Controllers
         {
             var result = await _companyService.AddCompany(cnpj);
 
-            if(result.Success == false)
+            if(result.Success == false && result.Message.Contains("ReceitaWS-Error"))
             {
                 return StatusCode(StatusCodes.Status503ServiceUnavailable, result);
+            }
+
+            if (result.Success == false && result.Message.Equals("Register-Company-Error"))
+            {
+                return BadRequest(result);
             }
 
             return Ok();

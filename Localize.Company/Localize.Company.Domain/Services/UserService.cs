@@ -22,7 +22,15 @@ namespace Localize.Company.Domain.Services
 
         public async Task<User> GetByToken()
         {
-            int userId = int.Parse(_httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value.ToString());
+            var httpContext = _httpContextAccessor.HttpContext;
+
+            if (httpContext == null || !httpContext.User.Identity.IsAuthenticated)
+                return null;
+
+            var userIdClaim = httpContext.User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out var userId))
+                return null;
 
             return _repository.Get(userId);
         }

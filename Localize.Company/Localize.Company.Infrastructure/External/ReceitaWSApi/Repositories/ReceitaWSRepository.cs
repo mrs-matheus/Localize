@@ -34,7 +34,7 @@ namespace Localize.Company.Infrastructure.External.ReceitaWSApi.Repositories
 
                 if (root.TryGetProperty("status", out var status) && status.GetString() == "ERROR")
                 {
-                    _notification.AddNotification("ReceitaWS", "ERROR, not in cache");
+                    _notification.AddNotification("ReceitaWS", "Error, not in cache");
                     return null;
                 }
 
