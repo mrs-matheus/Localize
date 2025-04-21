@@ -31,7 +31,7 @@ e mais
 1. Clone o repositório:
 
 ```bash
-git clone [https://github.com/mrs-matheus/Localize](https://github.com/mrs-matheus/Localize.git)
+git clone (https://github.com/mrs-matheus/Localize.git)
 
 cd Localize
 cd Localize.Company
