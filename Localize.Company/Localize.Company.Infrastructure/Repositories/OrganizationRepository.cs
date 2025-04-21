@@ -1,5 +1,6 @@
 ﻿using Localize.Company.Domain.Contracts.Repositories;
 using Localize.Company.Domain.Entities;
+using Localize.Company.Domain.Notifications;
 using Localize.Company.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,7 +8,7 @@ namespace Localize.Company.Infrastructure.Repositories
 {
     public class OrganizationRepository : RepositoryBase<Organization>, IOrganizationRepository
     {
-        public OrganizationRepository(LocalizeCompanyContext context) : base(context)
+        public OrganizationRepository(LocalizeCompanyContext context, NotificationContext notificationContext) : base(context, notificationContext)
         {
         }
 

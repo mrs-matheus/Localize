@@ -11,7 +11,7 @@ namespace Localize.Company.Application.Mappers
             CreateMap<ReceitaWS, Organization>()
                 .ForMember(dest => dest.NomeFantasia, opt => opt.MapFrom(src => src.fantasia))
                 .ForMember(dest => dest.NomeEmpresarial, opt => opt.MapFrom(src => src.nome))
-                .ForMember(dest => dest.Cnpj, opt => opt.MapFrom(src => src.cnpj))
+                .ForMember(dest => dest.Cnpj, opt => opt.MapFrom(src => CleanCnpj(src.cnpj)))
                 .ForMember(dest => dest.Situacao, opt => opt.MapFrom(src => src.status))
                 .ForMember(dest => dest.Abertura, opt => opt.MapFrom(src => ParseDate(src.abertura)))
                 .ForMember(dest => dest.Tipo, opt => opt.MapFrom(src => src.tipo))
@@ -33,6 +33,11 @@ namespace Localize.Company.Application.Mappers
         private static DateTime ParseDate(string data)
         {
             return DateTime.TryParse(data, out var result) ? result : DateTime.MinValue;
+        }
+
+        private static string CleanCnpj(string cnpj)
+        {
+            return new string(cnpj.Where(char.IsDigit).ToArray());
         }
     }
 }

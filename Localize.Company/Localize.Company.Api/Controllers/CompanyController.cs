@@ -1,7 +1,5 @@
-﻿using Localize.Company.Api.Requests;
-using Localize.Company.Api.Validations;
+﻿using Localize.Company.Api.Validations;
 using Localize.Company.Application.Contracts;
-using Localize.Company.Application.DTOs;
 using Localize.Company.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +19,13 @@ namespace Localize.Company.Api.Controllers
         [Route("cnpj/{cnpj}")]
         public async Task<IActionResult> AddCompany([FromRoute][ValidCnpj] string cnpj)
         {
-            await _companyService.AddCompany(cnpj);
+            var result = await _companyService.AddCompany(cnpj);
+
+            if(result.Success == false)
+            {
+                return StatusCode(StatusCodes.Status503ServiceUnavailable, result);
+            }
+
             return Ok();
         }
 

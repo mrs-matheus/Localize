@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Localize.Company.Application.Contracts;
 using Localize.Company.Application.DTOs;
+using Localize.Company.Application.Responses;
 using Localize.Company.Domain.Contracts.Services;
 using Localize.Company.Domain.Entities;
+using Localize.Company.Domain.Notifications;
 using Localize.Company.Infrastructure.External.ReceitaWSApi.Contracts;
 
 namespace Localize.Company.Application.Services
@@ -13,41 +15,52 @@ namespace Localize.Company.Application.Services
         private readonly IOrganizationService _organizationService;
         private readonly IReceitaWSService _receitaWSService;
         private readonly IUserService _userService;
+        private readonly NotificationContext _notification;
         public CompanyService(
             IOrganizationService organizationService,
             IReceitaWSService receitaWSService,
             IMapper mapper,
-            IUserService userService)
+            IUserService userService,
+            NotificationContext notification)
         {
             _organizationService = organizationService;
             _receitaWSService = receitaWSService;
             _mapper = mapper;
             _userService = userService;
+            _notification = notification;
         }
 
-        public async Task AddCompany(string cnpj)
+        public async Task<ResponseBase<object>> AddCompany(string cnpj)
         {
             var existingCompany = await _organizationService.GetByCnpj(cnpj);
 
             if (existingCompany != null)
             {
-                throw new InvalidOperationException("Company with this CNPJ already exists");
+                _notification.AddNotification("Cnpj", "Unable to register this company, try other");
+                return ResponseBase<object>.Fail(_notification.Notifications.ToList());
             }
 
             var receitaWS = await _receitaWSService.GetCompanyByCnpj(cnpj);
 
+            if (receitaWS == null)
+            {
+                return ResponseBase<object>.Fail(_notification.Notifications.ToList());
+            }
+
             var organization = _mapper.Map<Organization>(receitaWS);
 
             await _organizationService.AddByLoggedUser(organization);
+
+            return ResponseBase<object>.Ok();
         }
 
-        public async Task<OrganizationDto> GetAllByLoggedUser()
+        public async Task<ResponseBase<OrganizationDto>> GetAllByLoggedUser()
         {
             var user = await _userService.GetByToken();
 
             var organizations = await _organizationService.GetAllLoggedUser(user.Id);
 
-            var organizationDto = new OrganizationDto
+            return ResponseBase<OrganizationDto>.Ok(new OrganizationDto
             {
                 User = new UserDto
                 {
@@ -56,9 +69,7 @@ namespace Localize.Company.Application.Services
                     Email = user.Email
                 },
                 Organizations = organizations
-            };
-
-            return organizationDto;
+            });
         }
     }
 }

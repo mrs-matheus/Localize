@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using Localize.Company.Domain.Notifications;
+using System.Linq.Expressions;
 
 namespace Localize.Company.Domain.Contracts.Services
 {
