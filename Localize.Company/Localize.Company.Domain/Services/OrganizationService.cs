@@ -27,6 +27,13 @@ namespace Localize.Company.Domain.Services
         public async Task AddByLoggedUser(Organization organization)
         {
             var loggedUser = await _userService.GetByToken();
+
+            if (loggedUser == null)
+            {
+                AddNotification("User", "User not found");
+                return;
+            }
+
             organization.UserId = loggedUser.Id;
             await _repository.Add(organization);
         }

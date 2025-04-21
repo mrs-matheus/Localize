@@ -44,12 +44,17 @@ namespace Localize.Company.Application.Services
 
             if (receitaWS == null)
             {
-                return ResponseBase<object>.Fail(_notification.Notifications.ToList());
+                return ResponseBase<object>.Fail(_notification.Notifications.ToList(), "ReceitaWS-Error");
             }
 
             var organization = _mapper.Map<Organization>(receitaWS);
 
             await _organizationService.AddByLoggedUser(organization);
+
+            if (!_notification.IsValid)
+            {
+                return ResponseBase<object>.Fail(_notification.Notifications.ToList(), "Register-Company-Error");
+            }
 
             return ResponseBase<object>.Ok();
         }
