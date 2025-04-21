@@ -18,30 +18,37 @@ namespace Localize.Company.Controllers
         [HttpPost("signup")]
         public async Task<IActionResult> SignUp([FromBody] SignUpRequest request)
         {
-            var dto = new SignUpDto
+            var result = await _accountService.Create(new SignUpDto
             {
                 Name = request.Name,
                 Email = request.Email,
                 Password = request.Password
-            };
+            });
 
-            var result = await _accountService.Create(dto);
+            if (result.Success == false)
+            {
+                return BadRequest(result);
+            }
 
-            return Ok(new TokenDto { Token = result });
+            return Ok(result);
         }
 
         [AllowAnonymous]
         [HttpPost("signin")]
         public async Task<IActionResult> SignIn([FromBody] SignInRequest request)
         {
-            var dto = new SignInDto
+            var result = await _accountService.Authenticate(new SignInDto
             {
                 Email = request.Email,
                 Password = request.Password
-            };
-            var result = await _accountService.Authenticate(dto);
+            });
 
-            return Ok(new TokenDto { Token = result });
+            if(result.Success == false)
+            {
+                return BadRequest(result);
+            }
+
+            return Ok(result);
         }
     }
 }

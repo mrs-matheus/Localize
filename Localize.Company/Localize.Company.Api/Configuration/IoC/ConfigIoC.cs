@@ -3,6 +3,7 @@ using Localize.Company.Application.Mappers;
 using Localize.Company.Application.Services;
 using Localize.Company.Domain.Contracts.Repositories;
 using Localize.Company.Domain.Contracts.Services;
+using Localize.Company.Domain.Notifications;
 using Localize.Company.Domain.Services;
 using Localize.Company.Infrastructure.Contexts;
 using Localize.Company.Infrastructure.External.ReceitaWSApi.Contracts;
@@ -43,6 +44,8 @@ namespace Localize.Company.Configuration.IoC
             //AutoMapper
             services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
+            //NotificationPattern
+            services.AddScoped<NotificationContext>();
         }
 
         public static void JWTConfiguration(IServiceCollection services, IConfiguration config)

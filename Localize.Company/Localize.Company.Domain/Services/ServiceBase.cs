@@ -1,17 +1,27 @@
 ﻿using Localize.Company.Domain.Contracts.Repositories;
 using Localize.Company.Domain.Contracts.Services;
 using Localize.Company.Domain.Entities;
+using Localize.Company.Domain.Notifications;
 using System.Linq.Expressions;
 
 namespace Localize.Company.Domain.Services
 {
-    public class ServiceBase<T> : IServiceBase<T> where T : EntityBase
+    public class ServiceBase<T> : NotificationContext, IServiceBase<T> where T : EntityBase
     {
         private readonly IRepositoryBase<T> _repository;
-        public ServiceBase(IRepositoryBase<T> repository)
+        protected readonly NotificationContext _notifiableContext;
+        public ServiceBase(IRepositoryBase<T> repository, NotificationContext notifiableContext)
         {
             _repository = repository;
+            _notifiableContext = notifiableContext;
         }
+
+        protected void AddNotification(string key, string message)
+        => _notifiableContext.AddNotification(key, message);
+
+        protected bool IsValid => _notifiableContext.IsValid;
+
+        protected IReadOnlyCollection<Notification> Notifications => _notifiableContext.Notifications;
 
         public virtual async Task<T> Add(T entity)
         {

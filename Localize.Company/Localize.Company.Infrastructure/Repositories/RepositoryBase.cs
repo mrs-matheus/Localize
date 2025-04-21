@@ -1,18 +1,25 @@
 ﻿using Localize.Company.Domain.Contracts.Repositories;
 using Localize.Company.Domain.Entities;
+using Localize.Company.Domain.Notifications;
 using Localize.Company.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
 
 namespace Localize.Company.Infrastructure.Repositories
 {
-    public class RepositoryBase<T> : IRepositoryBase<T> where T : EntityBase
+    public class RepositoryBase<T> : NotificationContext, IRepositoryBase<T> where T : EntityBase
     {
         protected LocalizeCompanyContext _context;
-        public RepositoryBase(LocalizeCompanyContext context)
+        protected readonly NotificationContext _notificationContext;
+        public RepositoryBase(LocalizeCompanyContext context, NotificationContext notificationContext)
         {
             _context = context;
+            _notificationContext = notificationContext;
         }
+
+        protected void AddNotification(string key, string message)
+        => _notificationContext.AddNotification(key, message);
 
         public virtual async Task<T> Add(T entity)
         {

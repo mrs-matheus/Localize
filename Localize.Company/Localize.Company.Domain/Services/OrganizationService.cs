@@ -1,6 +1,7 @@
 ﻿using Localize.Company.Domain.Contracts.Repositories;
 using Localize.Company.Domain.Contracts.Services;
 using Localize.Company.Domain.Entities;
+using Localize.Company.Domain.Notifications;
 
 namespace Localize.Company.Domain.Services
 {
@@ -8,7 +9,10 @@ namespace Localize.Company.Domain.Services
     {
         private readonly IOrganizationRepository _repository;
         private readonly IUserService _userService;
-        public OrganizationService(IOrganizationRepository repository, IUserService userService) : base(repository)
+        public OrganizationService(
+            IOrganizationRepository repository,
+            NotificationContext notificationContext,
+            IUserService userService) : base(repository, notificationContext)
         {
             _repository = repository;
             _userService = userService;
