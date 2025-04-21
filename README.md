@@ -3,7 +3,7 @@
 Projeto .NET 9 para gerenciamento de contas e autenticação com arquitetura em camadas.
 O projeto foi desenvolvido com:
 
-DDD
+- DDD
 - EntityFramework
 - NotificationPattern
 - Padronização de Response
